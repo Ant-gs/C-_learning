@@ -53,3 +53,11 @@ foreach (int i in arr)
     }
 }
 Console.WriteLine(max);
+
+int n = 10;
+int k = 1;
+while (k<n)
+{
+    Console.Write($"{k} ");
+    k++;
+}
