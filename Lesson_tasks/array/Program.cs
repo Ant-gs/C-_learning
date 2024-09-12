@@ -13,7 +13,7 @@
 //     Console.WriteLine(arr2[i]);
 //     i = i + 1;
 // }
-
+// Чет, не чет
 int i = 0;
 int[] arr = {12, 42, 21, 41, 32, 16, 15, 61, 31, 9};
 while (i < arr.Length)
