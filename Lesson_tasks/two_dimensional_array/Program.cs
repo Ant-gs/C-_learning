@@ -1,27 +1,27 @@
-﻿int a = 1;
-Console.Write("Hello, enter the number of raws: ");
-string input = Console.ReadLine();
-int raw = Convert.ToInt32(input);
-Console.Write("Now enter the number of columns: ");
-input = Console.ReadLine();
-int col = Convert.ToInt32(input);
-int [,] table = new int[raw, col];
-for (int i = 0; i < raw; i++)
+﻿int[,] CreateMatrix(int rowCount, int colCount)
 {
-    for (int j = 0; j < col; j++)
+    int[,] matrix = new int[rowCount, colCount];
+    Random rnd = new Random();
+    for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        //Console.Write("1 ");
-        Console.Write($"Enter the {a} number: ");
-         string innput = Console.ReadLine();
-         table [i, j] = Convert.ToInt32(innput);
-         a = a + 1;
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            matrix[i, j] = rnd.Next(1, 1001);
+        }
+    }
+    return matrix;
+}
+
+void ShowMatrix(int[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            Console.Write($"{matrix[i, j]} ");
+        }
+        Console.WriteLine();
     }
 }
-for (int i = 0; i < raw; i++)
-{
-    for (int j = 0; j < col; j++)
-    {
-         Console.Write($"{table[i,j]} ");
-    }
-    Console.WriteLine(" ");
-}
+int[,] matrix = CreateMatrix(4, 5);
+ShowMatrix(matrix);
