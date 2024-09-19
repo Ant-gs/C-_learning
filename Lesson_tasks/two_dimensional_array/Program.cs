@@ -23,5 +23,27 @@ void ShowMatrix(int[,] matrix)
         Console.WriteLine();
     }
 }
-int[,] matrix = CreateMatrix(4, 5);
-ShowMatrix(matrix);
+// int[,] matrix = CreateMatrix(4, 5);
+// ShowMatrix(matrix);
+
+// int[,] table1 = new int[,]
+// {
+//     {1,1},{2,2},{3,3}
+// };
+// ShowMatrix(table1);
+int SumOfDigits(int[,] matrix)
+{
+    Sum = 0;
+     int[,] matrix = new int[rowCount, colCount];
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            for (int k = 0; k < digitcount; k)
+            Sum = matrix[i,j]/10;
+        }
+    }
+    return matrix;
+}
+
+bool IsEven()                                                                                                                                   

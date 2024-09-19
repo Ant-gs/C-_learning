@@ -21,8 +21,8 @@ int[] arr_integ = new int[size];
 while (i < size)
 {
     Console.Write($"Enter {i + 1} element of array: ");
-    string input = Console.ReadLine();
-    arr_integ[i] = Convert.ToInt32(input);
+string input = Console.ReadLine();
+arr_integ[i] = Convert.ToInt32(input);
     i = i + 1;
 }
 i = 0;
