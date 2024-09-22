@@ -99,6 +99,7 @@ int GetSumOfDigits (int value)
     return (sum);
 }
  ShowMatrix(matrix);
+ Console.
  Console.WriteLine();
 // string? input= Console.ReadLine();
 // int number = Convert.ToInt32(input);
