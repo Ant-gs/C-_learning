@@ -47,8 +47,8 @@ void ShowMatrix(int[,] matrix)
 //     return matr;
 // }
 
- int[,] matrix = CreateRandomMatrix(4, 5);
- int elements = 0;
+int[,] matrix = CreateRandomMatrix(4, 5);
+int elements = 0;
 // foreach (int e in matrix)
 // {
 //     if (Isinteresting(e) == true)
@@ -64,43 +64,43 @@ void ShowMatrix(int[,] matrix)
 // }
 
 for (int i = 0; i < matrix.GetLength(0); i++)
+{
+    for (int j = 0; j < matrix.GetLength(1); j++)
     {
-        for (int j = 0; j < matrix.GetLength(1); j++)
+        if (Isinteresting(matrix[i, j]) == true)
         {
-            if (Isinteresting(matrix [i,j]) == true)
-    {
-        Console.Write($"{matrix [i,j]} ");
-        elements = elements + 1;
-    }
-    else
-    {
-        Console.Write("--- ");
-    elements = elements + 1;
-    }
+            Console.Write($"{matrix[i, j]} ");
+            elements = elements + 1;
         }
-        Console.WriteLine();
+        else
+        {
+            Console.Write("--- ");
+            elements = elements + 1;
+        }
     }
     Console.WriteLine();
+}
+Console.WriteLine();
 bool Isinteresting(int value)
 {
     int SumOfDigits = GetSumOfDigits(value);
-    if (SumOfDigits%2 == 0)
+    if (SumOfDigits % 2 == 0)
         return true;
-        return false;
+    return false;
 }
-int GetSumOfDigits (int value)
+int GetSumOfDigits(int value)
 {
     int sum = 0;
     while (value > 0)
     {
-        sum = sum + value%10;
-        value = value/10;
+        sum = sum + value % 10;
+        value = value / 10;
     }
     return (sum);
 }
- ShowMatrix(matrix);
- Console.
- Console.WriteLine();
+ShowMatrix(matrix);
+Console.
+Console.WriteLine();
 // string? input= Console.ReadLine();
 // int number = Convert.ToInt32(input);
 // int Sum = 0;
