@@ -10,8 +10,8 @@ Console.Write($"Введите 2 число: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
 Console.Write($"Введите 3 число: ");
 int num3 = Convert.ToInt32(Console.ReadLine());
-if ((num1 > num2 && num1 < num3) || (num1 > num3 && num1 < num2))
 {
+if ((num1 > num2 && num1 < num3) || (num1 > num3 && num1 < num2))
     median = num1;
 }
 else if ((num2 > num1 && num2 < num3) || (num2 > num3 && num2 < num1))
