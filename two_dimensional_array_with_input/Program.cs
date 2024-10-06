@@ -21,7 +21,7 @@ for (int i = 0; i < raw; i++)
 {
     for (int j = 0; j < col; j++)
     {
-         Console.Write($"{table[i,j]} ");
+         Console.Write($"{table[i,j], 4} ");
     }
     Console.WriteLine();
 }
